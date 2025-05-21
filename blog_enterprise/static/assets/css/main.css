@@ -94,6 +94,13 @@ img {
   max-width: 100%;
 }
 
+.footerImg{
+  background-image: url(../imgs/theme/footer.jpeg);
+  background-size: cover;
+  width: 100%;
+  padding: 50px 0;
+}
+
 *:focus,
 select:focus,
 .custom-select:focus,
@@ -2403,13 +2410,14 @@ input.qty-val {
 .breadcrumb {
   display: inline-block;
   padding: 0;
-  text-transform: capitalize;
-  color: #7E7E7E;
-  font-size: 14px;
+  text-transform: uppercase;
+  color:#38cf46;
+  font-size: 24px;
   font-weight: 600;
   background: none;
   margin: 0;
   border-radius: 0;
+  font-weight: bold;
 }
 .breadcrumb span {
   position: relative;
@@ -4718,7 +4726,7 @@ table.no-border td, table.no-border th, table.no-border thead {
 .archive-header {
   background: url(../imgs/blog/header-bg.png) no-repeat center center;
   border-radius: 20px;
-  padding: 70px 80px;
+  padding: 100px 150px;
   background-size: cover;
 }
 
@@ -5370,7 +5378,7 @@ h6.post-title {
   font-weight: 600;
 }
 .invoice .invoice-header {
-  padding: 80px 150px;
+  padding: 150px 80px;
   border-radius: 20px 20px 0 0;
   background-size: cover;
   background-position: center center;
@@ -5473,7 +5481,8 @@ h6.post-title {
 }
 
 .invoice-1 .invoice-header {
-  background: rgba(0, 0, 0, 0.04) url(../imgs/invoice/header-bg-1.png) top left repeat;
+  background: rgba(0, 0, 0, 0.04) url(../imgs/invoice/header-bg-1.jpeg) top left repeat;
+  background-size: cover;
 }
 
 .invoice-2 .invoice-info {
@@ -5484,7 +5493,7 @@ h6.post-title {
 }
 
 .invoice-3 .invoice-header {
-  background: url(../imgs/invoice/header-bg-2.jpg) top left no-repeat;
+  background: url(../imgs/invoice/header-bg-1.jpg) top left no-repeat;
   background-size: cover;
   padding: 50px 150px;
   color: #fff;
@@ -5564,7 +5573,7 @@ h6.post-title {
 /*Responsive*/
 @media only screen and (max-width: 992px) {
   .invoice .invoice-header {
-    padding: 80px 50px;
+    padding: 50px 40px;
   }
   .invoice .invoice-top {
     padding: 40px 50px 25px 50px;
@@ -9492,6 +9501,9 @@ footer .hotline img {
 }
 
 @media only screen and (max-width: 768px) {
+  .invoice .invoice-header {
+    padding: 90px 80px;
+  }
   .totall-product h2 {
     font-size: 28px;
   }
@@ -10150,6 +10162,9 @@ footer .hotline img {
 }
 /*small phone*/
 @media only screen and (max-width: 480px) {
+  .invoice .invoice-header {
+    padding: 50px 40px;
+  }
   .archive-header {
     padding: 30px;
   }
@@ -10571,6 +10586,9 @@ footer .hotline img {
 }
 /*small phone*/
 @media only screen and (max-width: 375px) {
+  .invoice .invoice-header {
+    padding: 40px 30px;
+  }
   .entry-meta .hit-count,
   .entry-meta.meta-2 .font-xs {
     display: none;
@@ -10600,5 +10618,17 @@ footer .hotline img {
   .deal .product-title {
     max-width: 100%;
     font-size: 35px;
+  }
+
+  @media only screen and (max-width: 395px) {
+    .invoice .invoice-header {
+      padding: 45px 25px;
+    }
+  }
+
+  @media only screen and (max-width: 1180px) {
+    .invoice .invoice-header {
+      padding: 45px 25px;
+    }
   }
 }/*# sourceMappingURL=main.css.map */
